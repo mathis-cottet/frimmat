@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto&display=swap');
+body{
+    background-color: rgba(0, 0, 0, 0.836);
+    color: black;
+}
+
+.container-connexion{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulaire-connexion{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 39vh;
+    background-color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    border-radius: 10px;
+
+}
+
+#email-connexion{
+    display: flex;
+    width: 15vw;
+    height: 5vh;
+    border: none;
+    background-color: #f1f1f1;
+    color: black;
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 5px;
+}
+.button-connexion{
+    width: 40%;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    transition: 1s;
+}
+.button-connexion:hover{
+    background-color: rgb(56, 53, 53);
+}
