@@ -41,7 +41,7 @@
 
 
 <?php 
-
+session_start();
 $msg = '';
 
 require_once('api/function/userclass.php');

@@ -1,10 +1,229 @@
 @import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto";
 }
-body{
-    height: 100vh;
-    width: 100%;
+a {
+  color: black;
+}
+body {
+  
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 80%;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  background-color: black;
+}
+.mapboxgl-popup-content {
+  padding: 0;
+}
+.bg-popup-red {
+  background-color: red;
+  padding: 10px 10px;
+}
+.bg-popup-green {
+  background-color: green;
+  padding: 10px 10px;
+}
+.bg-popup-yellow {
+  background-color: yellow;
+  padding: 10px 10px;
+}
+.bg-popup-black {
+  background-color: black;
+  padding: 10px 10px;
+}
+.bg-popup-orange {
+  background-color: orange;
+  padding: 10px 10px;
+}
+
+.blackBack {
+  background: #00000090;
+  /* background: linear-gradient(#00000020, #000000); */
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+header .navButton {
+  z-index: 10;
+  position: fixed;
+  top: 24px;
+  left: 2%;
+}
+
+header {
+  position: relative;
+  padding-top: 20px;
+  z-index: 2;
+}
+
+header .navButton ul li {
+  margin: 5px;
+  height: 4px;
+  width: 35px;
+  border-radius: 20px;
+  background: white;
+  transition: 0.6s all ease-in-out;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.6);
+}
+
+header .navigation ul li a {
+  color: white;
+}
+
+header .navigation ul li {
+  margin: 40px;
+}
+
+header .navigation {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  padding: 50px;
+  padding-top: 100px;
+  background-color: #00000095;
+  backdrop-filter: blur(6px);
+  transition: 0.6s all ease-in-out;
+}
+
+/* ----------------- */
+
+.exit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -2px;
+  top: -2px;
+  color: white;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 25px;
+  margin: 15px;
+}
+
+/* -------------------- */
+
+/* Contact */
+
+.coordonnées-contact {
+  text-align: center;
+  padding-top: 2vh;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#contact {
+  z-index: 1;
+  overflow: hidden;
+  width: 35%;
+  height: 70vh;
+  padding: 20px;
+  position: fixed;
+  bottom: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px 25px 0 0;
+  color: black;
+  transition: 0.6s all ease-in-out;
+  margin-left: 63%;
+}
+#textarea-contact {
+  width: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  resize: none;
+  height: 25vh;
+  font-size: 15px;
+}
+#email-contact{
+  width: 100%;
+  border: none;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  resize: none;
+  height: 4vh;
+  font-size: 15px;
+  padding: 3px;
+}
+.sous-titre-contact {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+.title-contact{
+  font-weight: bold;
+  font-size: 30px;
+}
+.form-contact{
+  width: 90%;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  font-size: 20px;
+}
+.label-contact{
+  width: 100%;
+}
+
+.label-contact2{
+  margin-top: 3vh;
+  width: 100%;
+}
+
+.bouton-contact{
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  width: 14vw;
+  height: 5vh;
+  font-size: 25px;
+  transition:0.8s
+}
+.bouton-contact:hover{
+  background-color: white;
+  color: black;
+}
+
+.menu-deroulant {
+  display: none;
+}
+
+
+#about {
+  z-index: 1;
+  overflow: hidden;
+  width: 35%;
+  height: 70vh;
+  padding: 20px;
+  position: fixed;
+  bottom: -100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 25px 25px 0 0;
+  color: black;
+  transition: 0.6s all ease-in-out;
+  margin-left: 63%;
 }
